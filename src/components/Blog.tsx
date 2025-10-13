@@ -1,11 +1,13 @@
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { Calendar, ArrowRight, Tag } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import blog1 from "@/assets/blog-1.jpg";
 import blog2 from "@/assets/blog-2.jpg";
 import blog3 from "@/assets/blog-3.jpg";
 
 const Blog = () => {
+  const navigate = useNavigate();
   const posts = [
     {
       title: "Como Aumentar Conversões com Marketing Digital",
@@ -94,7 +96,10 @@ const Blog = () => {
                 </p>
 
                 {/* Read More Button */}
-                <button className="flex items-center gap-2 text-sm font-medium text-primary group-hover:gap-3 transition-all pt-2">
+                <button 
+                  onClick={() => navigate("/artigo")}
+                  className="flex items-center gap-2 text-sm font-medium text-primary group-hover:gap-3 transition-all mt-4"
+                >
                   Ler Artigo
                   <ArrowRight className="w-4 h-4" />
                 </button>
