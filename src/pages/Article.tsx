@@ -266,13 +266,13 @@ const Article = () => {
               <Card className="p-6 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 border-primary/20 mt-12">
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl">
-                    JS
+                    SS
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2">João Silva</h3>
+                    <h3 className="text-xl font-bold mb-2">Sander</h3>
                     <p className="text-sm text-muted-foreground mb-3">
                       Especialista em Marketing Digital com mais de 10 anos de experiência 
-                      ajudando empresas a crescerem online. Apaixonado por dados e estratégias 
+                      ajudando empresas a crescerem online. Apaixonado por tecnologia e estratégias 
                       que geram resultados reais.
                     </p>
                     <div className="flex gap-2">
