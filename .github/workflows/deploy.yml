@@ -1,11 +1,11 @@
-name: Deploy site to GitHub Pages
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # ou o nome do seu branch principal
+    branches: [ main ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -22,8 +22,8 @@ jobs:
       - name: Build do projeto
         run: npm run build
 
-      - name: Publicar no GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy para GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          branch: gh-pages
+          folder: dist
