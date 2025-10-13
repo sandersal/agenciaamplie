@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Facebook, Twitter, Linkedin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { FaWhatsapp } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import articleHero from "@/assets/article-hero.jpg";
@@ -344,9 +345,16 @@ const Article = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   Nossa equipe está pronta para transformar seus resultados digitais.
                 </p>
-                <Button variant="hero" size="sm" className="w-full">
-                  Falar com Especialista
-                </Button>
+                <a
+                  href="https://wa.me/5593991987219?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20marketing."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="hero" size="sm" className="w-full flex items-center justify-center gap-2">
+                    <FaWhatsapp className="text-lg" />
+                    Falar com Especialista
+                  </Button>
+                </a>
               </Card>
             </aside>
           </div>
