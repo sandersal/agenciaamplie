@@ -11,7 +11,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/ampliemarketing", label: "Instagram" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
     { icon: Twitter, href: "#", label: "Twitter" },
   ];
@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold gradient-hero-text mb-4">
-              AGÊNCIA
+              AMPLIE MARKETING
             </h3>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Transformando ideias em experiências digitais memoráveis desde 2013.
@@ -76,7 +76,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/5511999999999"
+        href="https://wa.me/5593991872819"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary text-white flex items-center justify-center shadow-lg hover:scale-110 transition-all z-50 animate-glow-pulse"
