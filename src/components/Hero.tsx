@@ -39,10 +39,17 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button href="contato" variant="hero" size="xl" className="group">
+            <a
+              href="contato"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+            <Button variant="hero" size="xl" className="group">
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+            </a>
+            
             <Button variant="hero-outline" size="xl">
               Ver Portfólio
             </Button>
