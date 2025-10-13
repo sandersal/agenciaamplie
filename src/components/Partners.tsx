@@ -44,9 +44,9 @@ const Partners = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border/50">
           {[
-            { number: "150+", label: "Projetos Entregues" },
+            { number: "1000+", label: "Projetos Entregues" },
             { number: "10+", label: "Anos de Experiência" },
-            { number: "95%", label: "Clientes Satisfeitos" },
+            { number: "98%", label: "Clientes Satisfeitos" },
             { number: "50+", label: "Marcas Atendidas" },
           ].map((stat) => (
             <div key={stat.label} className="text-center animate-fade-in">

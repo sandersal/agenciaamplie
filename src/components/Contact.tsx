@@ -24,19 +24,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "contato@agencia.com.br",
+      content: "ampliemarketingtec@gmail.com",
       link: "mailto:contato@agencia.com.br",
     },
     {
       icon: Phone,
       title: "Telefone",
-      content: "(11) 9999-9999",
-      link: "tel:+5511999999999",
+      content: "(93) 99187-2819",
+      link: "tel:+5593991872819",
     },
     {
       icon: MapPin,
       title: "Localização",
-      content: "São Paulo, SP",
+      content: "Santarém, PA",
       link: "#",
     },
   ];
@@ -99,7 +99,7 @@ const Contact = () => {
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="(11) 99999-9999"
+                  placeholder="(93) 99187-2819"
                   className="bg-background border-border/50"
                 />
               </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                 variant="hero" 
                 size="lg" 
                 className="w-full"
-                onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/5593991872819', '_blank')}
               >
                 Iniciar Conversa
               </Button>

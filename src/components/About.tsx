@@ -58,7 +58,7 @@ const About = () => {
             <div className="pt-4">
               <div className="flex flex-wrap gap-4">
                 <div className="px-6 py-3 rounded-lg bg-primary/10 border border-primary/20">
-                  <div className="text-2xl font-bold text-primary">150+</div>
+                  <div className="text-2xl font-bold text-primary">1000+</div>
                   <div className="text-sm text-muted-foreground">Projetos</div>
                 </div>
                 <div className="px-6 py-3 rounded-lg bg-secondary/10 border border-secondary/20">

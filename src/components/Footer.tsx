@@ -67,9 +67,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>© {currentYear} Agência. Todos os direitos reservados.</p>
+          <p>© {currentYear} Amplie Marketing e Tecnologia. Todos os direitos reservados.</p>
           <p>
-            Feito com <span className="text-primary">♥</span> em São Paulo
+            Feito com <span className="text-primary">♥</span> em Santarém
           </p>
         </div>
       </div>
