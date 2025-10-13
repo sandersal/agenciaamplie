@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Facebook, Twitter, Linkedin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { FaWhatsapp } from "react-icons/fa";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import articleHero from "@/assets/article-hero.jpg";
@@ -351,7 +350,6 @@ const Article = () => {
                   rel="noopener noreferrer"
                 >
                   <Button variant="hero" size="sm" className="w-full flex items-center justify-center gap-2">
-                    <FaWhatsapp className="text-lg" />
                     Falar com Especialista
                   </Button>
                 </a>
