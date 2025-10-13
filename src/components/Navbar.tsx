@@ -49,14 +49,15 @@ const Navbar = () => {
               </a>
             ))}
              {/* Botão WhatsApp */}
-                <a
-                  href="https://wa.me/5593991872819?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <a
+              href="https://wa.me/5593991872819?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button variant="hero" size="default">
               Solicitar Orçamento
             </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
