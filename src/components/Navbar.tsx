@@ -47,7 +47,6 @@ const Navbar = () => {
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all group-hover:w-full" />
 
-                {link.href}
                 <a href="https://wa.me/5593999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
                 target="_blank"
                 rel="noopener noreferrer"
