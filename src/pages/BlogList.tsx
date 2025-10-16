@@ -46,7 +46,6 @@ const BlogList = () => {
       const { data, error } = await supabase
         .from("blog")
         .select("*")
-        .eq("published", true)
         .order("created_at", { ascending: false });
 
       if (error) throw error;
