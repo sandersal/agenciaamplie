@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./hooks/useAuth";
 import Index from "./pages/Index";
 import Article from "./pages/Article";
+import BlogList from "./pages/BlogList";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import Login from "./pages/admin/Login";
@@ -29,6 +30,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/artigo" element={<Article />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<Article />} />
             <Route path="/admin/login" element={<Login />} />
             <Route path="/admin/dashboard" element={<Dashboard />} />
             <Route path="/admin/portfolio" element={<Portfolio />} />

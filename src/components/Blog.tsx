@@ -110,7 +110,11 @@ const Blog = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <Button variant="hero-outline" size="lg">
+          <Button 
+            variant="hero-outline" 
+            size="lg"
+            onClick={() => navigate("/blog")}
+          >
             Ver Todos os Artigos
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
