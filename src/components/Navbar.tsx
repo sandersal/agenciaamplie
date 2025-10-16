@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -38,16 +39,33 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-foreground/80 hover:text-foreground transition-colors relative group"
-              >
-                {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all group-hover:w-full" />
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isExternalOrAnchor = link.href.startsWith('#') || link.href.startsWith('http');
+              
+              if (isExternalOrAnchor) {
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-foreground/80 hover:text-foreground transition-colors relative group"
+                  >
+                    {link.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all group-hover:w-full" />
+                  </a>
+                );
+              }
+              
+              return (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-foreground/80 hover:text-foreground transition-colors relative group"
+                >
+                  {link.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all group-hover:w-full" />
+                </Link>
+              );
+            })}
              {/* Botão WhatsApp */}
             <a
               href="https://wa.me/5593991872819?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
@@ -73,19 +91,42 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-foreground/80 hover:text-foreground transition-colors py-2"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
-              <Button variant="hero" size="default" className="w-full">
-                Solicitar Orçamento
-              </Button>
+              {navLinks.map((link) => {
+                const isExternalOrAnchor = link.href.startsWith('#') || link.href.startsWith('http');
+                
+                if (isExternalOrAnchor) {
+                  return (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="text-foreground/80 hover:text-foreground transition-colors py-2"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  );
+                }
+                
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-foreground/80 hover:text-foreground transition-colors py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
+              <a
+                href="https://wa.me/5593991872819?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="hero" size="default" className="w-full">
+                  Solicitar Orçamento
+                </Button>
+              </a>
             </div>
           </div>
         )}
