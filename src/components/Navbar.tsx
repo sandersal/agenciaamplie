@@ -16,7 +16,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "https://amplieseumkt.com.br" },
     { name: "Serviços", href: "#servicos" },
     { name: "Portfólio", href: "#portfolio" },
     { name: "Sobre", href: "#sobre" },
@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold gradient-hero-text">
+          <a href="https://amplieseumkt.com.br" className="text-2xl font-bold gradient-hero-text">
             AMPLIE MARKETING
           </a>
 

@@ -40,7 +40,7 @@ const Hero = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <a
-              href="#contato"
+              href="https://api.whatsapp.com/send/?phone=5593991872819&text&type=phone_number&app_absent=0"
               target="_self"
               rel="noopener noreferrer"
             >
@@ -50,7 +50,7 @@ const Hero = () => {
             </Button>
             </a>
             
-            <Button variant="hero-outline" size="xl">
+            <Button variant="#servicos" size="xl">
               Ver Portfólio
             </Button>
           </div>

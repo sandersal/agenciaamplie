@@ -22,9 +22,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold gradient-hero-text mb-4">
-              AMPLIE MARKETING
-            </h3>
+            <a href="https://amplieseumkt.com.br" className="text-2xl font-bold gradient-hero-text">
+            AMPLIE MARKETING
+            </a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Transformando ideias em experiências digitais memoráveis desde 2013.
             </p>
