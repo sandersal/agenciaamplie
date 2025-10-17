@@ -18,10 +18,10 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { 
-  Bold, Italic, Underline, Strikethrough, Code, List, ListOrdered, 
+  Bold, Italic, Strikethrough, Code, List, ListOrdered, 
   Quote, Minus, Undo, Redo, AlignLeft, AlignCenter, AlignRight, 
   AlignJustify, Image as ImageIcon, Link as LinkIcon, Table as TableIcon,
-  Palette, Highlighter, Type, Frame
+  Highlighter, Type, Frame
 } from 'lucide-react';
 import { useState } from 'react';
 import {
