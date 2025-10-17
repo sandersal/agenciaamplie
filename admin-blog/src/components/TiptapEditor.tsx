@@ -1,16 +1,16 @@
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import { TextStyle } from '@tiptap/extension-text-style';
-import FontFamily from '@tiptap/extension-font-family';
-import Color from '@tiptap/extension-color';
-import Highlight from '@tiptap/extension-highlight';
-import Table from '@tiptap/extension-table';
-import TableRow from '@tiptap/extension-table-row';
-import TableCell from '@tiptap/extension-table-cell';
-import TableHeader from '@tiptap/extension-table-header';
-import Image from '@tiptap/extension-image';
-import Link from '@tiptap/extension-link';
-import TextAlign from '@tiptap/extension-text-align';
+import { FontFamily from } '@tiptap/extension-font-family';
+import { Color } from '@tiptap/extension-color';
+import { Highlight from } '@tiptap/extension-highlight';
+import { Table } from '@tiptap/extension-table'
+import { TableRow } from '@tiptap/extension-table-row'
+import { TableCell } from '@tiptap/extension-table-cell'
+import { TableHeader } from '@tiptap/extension-table-header'
+import { Image from } '@tiptap/extension-image';
+import { Link from } '@tiptap/extension-link';
+import { TextAlign from } '@tiptap/extension-text-align';
 import { FontSize } from '../extensions/FontSize';
 import { LineHeight } from '../extensions/LineHeight';
 import { CustomButton } from '../extensions/CustomButton';
