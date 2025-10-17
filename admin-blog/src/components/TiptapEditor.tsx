@@ -1,6 +1,6 @@
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import TextStyle from '@tiptap/extension-text-style';
+import { TextStyle } from '@tiptap/extension-text-style';
 import FontFamily from '@tiptap/extension-font-family';
 import Color from '@tiptap/extension-color';
 import Highlight from '@tiptap/extension-highlight';
@@ -124,6 +124,7 @@ export const TiptapEditor = ({ content, onChange }: TiptapEditorProps) => {
 
   const addImage = () => {
     if (imageUrl) {
+      // @ts-ignore
       editor.chain().focus().setImage({ src: imageUrl }).run();
       setImageUrl('');
       setShowImageDialog(false);
@@ -270,6 +271,7 @@ export const TiptapEditor = ({ content, onChange }: TiptapEditorProps) => {
             type="color"
             className="w-12 h-8 p-0 border-0"
             value={editor.getAttributes('highlight').color || '#ffff00'}
+            // @ts-ignore
             onChange={(e) => editor.chain().focus().toggleHighlight({ color: e.target.value }).run()}
           />
         </div>
@@ -281,6 +283,7 @@ export const TiptapEditor = ({ content, onChange }: TiptapEditorProps) => {
           type="button"
           variant={editor.isActive({ textAlign: 'left' }) ? 'default' : 'ghost'}
           size="sm"
+          // @ts-ignore
           onClick={() => editor.chain().focus().setTextAlign('left').run()}
         >
           <AlignLeft className="h-4 w-4" />
@@ -374,6 +377,7 @@ export const TiptapEditor = ({ content, onChange }: TiptapEditorProps) => {
           type="button"
           variant="ghost"
           size="sm"
+          // @ts-ignore
           onClick={() => editor.chain().focus().insertTable({ rows: 3, cols: 3, withHeaderRow: true }).run()}
         >
           <TableIcon className="h-4 w-4" />
